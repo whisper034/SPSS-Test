@@ -578,23 +578,6 @@ footer {
     margin-top: 12px;
 }
 
-.lomba-bg-1 {
-    background-image: url("../storage/assets/images/lomba-atas.png");
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: top;
-}
-
-.lomba-bg-2 {
-    background-image: url("../storage/assets/images/lomba-bawah.png");
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
-    margin-bottom: -36px;
-}
-
 /* About */
 .about-description {
     font-size: 1.3em;

@@ -1,21 +1,20 @@
-@font-face{
-    font-family: 'Source Sans Pro';
-    src: url('../fonts/SourceSansPro-Regular.ttf');
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-Regular.ttf");
 }
 
-@font-face{
-    font-family: 'Comfoorta';
-    src: url('../fonts/Comfortaa-Regular.ttf');
-}
-
-body{
-    background-color: #1F1955;
-    font-family: 'Source Sans Pro';
+body {
+    background-color: #0B66A5;
+    font-family: 'Open Sans';
+    background-image: url("../storage/assets/images/login-background.png");
+    background-size: contain;
+    background-repeat: repeat;
+    background-color: #003c60;
 }
 
 .header{
     background-color: #1C1047;
-    
+
     &-logo{
         text-align: center;
         padding-top: 36px;
@@ -46,7 +45,7 @@ body{
 }
 
 .nav{
-    &-link{  
+    &-link{
         color: #90CAFF !important;
     }
 }
@@ -243,14 +242,14 @@ footer{
 
     &-info{
         font-size: calc(8px + 1.5vw);
-        
+
         @media (max-width: 768px){
             font-size: calc(8px + 2vw);
         }
     }
 }
 
-/* Form */ 
+/* Form */
 .form{
     &-style{
         margin: 175px auto;
@@ -258,7 +257,7 @@ footer{
         @media (max-width: 768px){
             margin: 50% 15px;
         }
-    
+
         &-heading{
             text-align: left;
             margin: auto;
@@ -272,7 +271,7 @@ footer{
                 text-align: center;
             }
         }
-    
+
         &-content{
             padding-top: 24px;
             margin: auto;
@@ -289,7 +288,7 @@ footer{
     }
 }
 
-/* Footer */ 
+/* Footer */
 .footer-content{
     margin-top: 24px;
 
@@ -329,7 +328,7 @@ footer{
     margin-top: 20px;
 }
 
-/* Verifikasi Email */ 
+/* Verifikasi Email */
 .outer-border{
     margin: auto;
     width: 80%;
@@ -350,7 +349,7 @@ footer{
     }
 }
 
-/* Dashboard */ 
+/* Dashboard */
 .legends{
     margin: 8px 6px 0;
     display: block;
@@ -401,7 +400,7 @@ footer{
     @media(min-width:992px){
         height: 32em;
     }
-    
+
     .download-file{
         margin: 12px 0 0;
     }
@@ -411,7 +410,7 @@ footer{
     }
 }
 
-/* Penjelasan Seminar & Lomba */ 
+/* Penjelasan Seminar & Lomba */
 
 .penjelasan{
     &-seminar{
@@ -545,33 +544,12 @@ footer{
     }
 
     &-bg{
-        &-1{
-            background-image: url("../storage/assets/images/lomba-atas.png");
-            background-size: auto;
-            background-repeat: no-repeat;
-            background-position-x: left;
-            background-position-y: top;
-        }
-
-        &-2{
-            background-image: url("../storage/assets/images/lomba-bawah.png");
-            background-size: auto;
-            background-repeat: no-repeat;
-            background-position-x: right;
-            background-position-y: bottom;
-            margin-bottom: -36px;
-        }
     }
 }
 
-/* About */ 
+/* About */
 
 .about{
-    &-video{
-        background-image: url("../storage/assets/images/hiasan_video.png");
-        background-size: cover;
-    }
-
     &-description{
         font-size: 1.3em;
         @media (max-width: 992px){
@@ -586,24 +564,16 @@ footer{
         @media (max-width: 992px){
             padding-bottom: 256px;
         }
-    
+
         ol{
             @media (min-width: 992px){
                 max-width: 80%;
             }
-    
+
             li{
                 font-size: 1.3em;
             }
         }
-    }
-
-    &-bg{
-        background-image: url("../storage/assets/images/hiasan_globe.png");
-        background-size: auto;
-        background-repeat: no-repeat;
-        background-position-x: right;
-        background-position-y: bottom;
     }
 }
 
@@ -614,26 +584,17 @@ footer{
     cursor: pointer;
 }
 
-/* Login */ 
+/* Login */
 .login{
-    &-bg{
-        margin-bottom: -36px;
-        background-image: url("../storage/assets/images/login-line.png");
-        background-size: 25%;
-        background-repeat: no-repeat;
-        background-position-x: left;
-        background-position-y: bottom;
-    }
-
     &-form{
-        position:relative; 
-        margin: -20% auto 0; 
-        padding-bottom:72px; 
+        position:relative;
+        margin: -20% auto 0;
+        padding-bottom:72px;
         z-index:2;
     }
 
     &-logo{
-        position:relative; 
+        position:relative;
         z-index:1;
     }
 }
