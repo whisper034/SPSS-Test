@@ -1,0 +1,7 @@
+*
+!public/
+!public/**
+!bukti_pembayaran/
+!file/
+!peserta/
+!.gitignore

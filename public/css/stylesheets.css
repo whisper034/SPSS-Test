@@ -1,0 +1,675 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+body {
+    background-color: #0B66A5;
+    font-family: 'Open Sans';
+    background-image: url("../storage/assets/images/login-background.png");
+    background-size: contain;
+    background-repeat: repeat;
+    background-color: #003c60;
+}
+
+.header {
+    background-color: #135780;
+}
+
+.header-logo {
+    text-align: center;
+    padding-top: 36px;
+}
+
+@media (max-width: 768px) {
+    .header-logo {
+        display: none;
+    }
+}
+
+.header-logo img {
+    width: 475px;
+}
+
+.navbar-nav > li {
+    padding-right: 48px;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+.nav-link {
+    color: #90CAFF !important;
+}
+
+footer {
+    background-color: #135780;
+    padding-bottom: 24px;
+    margin-top: 36px;
+}
+
+/* Reusable */
+.flex {
+    display: flex;
+}
+
+.bluebox {
+    background-color: #135780;
+    margin-top: 72px;
+    border-radius: 36px;
+    /*  top right bottom left */
+    padding: 40px 36px 40px;
+}
+
+.bluebox-2 {
+    background-color: #135780;
+    margin-top: 72px;
+    border-radius: 36px;
+    /*  top right bottom left */
+    padding: 40px 36px 40px;
+}
+
+.darkbluebox {
+    background-color: #135780;
+    margin: 0;
+    border-radius: 36px;
+    padding: 72px 36px 36px;
+}
+
+@media (max-width: 768px) {
+    .darkbluebox {
+        margin-top: 36px;
+    }
+}
+
+.pinkbox {
+    background-color: #ed2e92;
+    border-radius: 24px;
+    padding: 12px 24px;
+}
+
+.heading {
+    font-size: calc(30px + 2vw);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.heading-2 {
+    font-size: calc(24px + 2vw);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.heading-lomba {
+    font-size: calc(28px + 2.5vw);
+    font-weight: 700;
+    line-height: 1;
+}
+
+@media (min-width: 992px) {
+    .heading-lomba {
+        font-size: calc(24px + 1.5vw);
+        font-weight: 700;
+        line-height: 1;
+    }
+}
+
+.sub-heading {
+    font-size: calc(20px + 1.3vw);
+}
+
+.buttons {
+    margin-top: 12px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        text-align: center;
+    }
+}
+
+.fit-banner {
+    margin: 24px auto;
+}
+
+.fit-banner img {
+    width: 70%;
+}
+
+@media (max-width: 768px) {
+    .fit-banner img {
+        width: 100%;
+    }
+}
+
+.fit-content-btn {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 15px;
+}
+
+/* Home */
+.summary {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+}
+
+.summary-logo {
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.summary-logo img {
+    width: 70%;
+}
+
+.summary-text {
+    align-self: center;
+    width: 115%;
+    margin-top: -20%;
+}
+
+.summary-text .spss-info {
+    margin-top: 20px;
+    text-align: justify;
+    font-size: calc(15px + 0.8vw);
+    line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+    .summary-text .spss-info {
+        line-height: 1.3;
+    }
+}
+
+.summary-background {
+    width: 100%;
+}
+
+.summary-background img {
+    max-width: 576px;
+    width: 75%;
+}
+
+.timeline-logo img {
+    width: 45%;
+}
+
+@media (max-width: 992px) {
+    .timeline-logo img {
+        width: 70%;
+    }
+}
+
+.timeline-chart img {
+    width: 100%;
+    max-width: 873px;
+}
+
+.seminar-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-top: 36px;
+}
+
+@media (max-width: 768px) {
+    .seminar-grid {
+        display: block;
+    }
+}
+
+.seminar-logo img {
+    width: 30%;
+}
+
+@media (max-width: 992px) {
+    .seminar-logo img {
+        width: 55%;
+    }
+}
+
+.seminar-photo {
+    margin: 12px auto;
+    background-image: url("../storage/assets/images/profile.png");
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    width: calc(150px + 20vw);
+    height: calc(150px + 20vw);
+}
+
+@media (max-width: 576px) {
+    .seminar-photo {
+        width: calc(130px + 30vw);
+        height: calc(130px + 30vw);
+    }
+}
+
+.seminar-info {
+    font-size: calc(8px + 1.5vw);
+}
+
+@media (max-width: 768px) {
+    .seminar-info {
+        font-size: calc(8px + 2vw);
+    }
+}
+
+/* Form */
+.form-style {
+}
+
+@media (max-width: 768px) {
+    .form-style {
+        margin: 50% 15px;
+    }
+}
+
+.form-style-heading {
+    text-align: left;
+    font-size: calc(8px + 2vw);
+    font-weight: 700;
+    color: #D5F4FF;
+}
+
+@media (max-width: 576px) {
+    .form-style-heading {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+.form-style-content {
+    padding-top: 24px;
+}
+
+@media (max-width: 576px) {
+    .form-style-content {
+        width: 80%;
+    }
+}
+
+.form-control {
+    background: none;
+    border: 5px solid #7ab6dd;
+    padding: 1.5em;
+    width: 100%;
+}
+
+/* Footer */
+.footer-content {
+    margin-top: 24px;
+}
+
+.footer-content-title {
+    font-size: 20px;
+    color: #9bd7ff;
+}
+
+.footer-content-details {
+    font-size: 15px;
+}
+
+.sekretariat-content {
+    margin-top: 4px;
+    display: flex;
+}
+
+.sekretariat-content .address {
+    margin-left: 12px;
+}
+
+@media (min-width: 992px) {
+    .medium-padding-left {
+        padding-left: 25%;
+    }
+}
+
+.medium-padding-left .social-media-content {
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    column-gap: 4px;
+}
+
+.phone-info {
+    margin-top: 20px;
+}
+
+/* Verifikasi Email */
+.outer-border {
+    margin: auto;
+    width: 80%;
+    padding: 8px;
+    border: 4px solid #00A99D;
+    border-radius: 12px;
+}
+
+.inner-border {
+    margin: auto;
+    border: 1px solid #00A99D;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.inner-border .notify {
+    max-width: 376px;
+    margin: auto;
+}
+
+/* Dashboard */
+.legends {
+    margin: 8px 6px 0;
+    display: block;
+    font-size: calc(10px + 0.5vw);
+    align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+    .legends {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+    }
+}
+
+@media (max-width: 480px) {
+    .legends {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.legends-head {
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .legends-head {
+        margin-bottom: 12px;
+    }
+}
+
+.legends-tooltips {
+    display: grid;
+    grid-template-columns: 12px auto;
+    align-items: center;
+    column-gap: 4px;
+}
+
+@media (min-width: 768px) {
+    .legends-tooltips {
+        margin: 4px 0;
+    }
+}
+
+.legends-tooltips-color {
+    background-size: cover;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.text-box {
+    padding: 36px;
+    background-color: #0e1c38;
+    border-radius: 16px;
+    height: 45em;
+}
+
+@media (min-width: 576px) {
+    .text-box {
+        height: 35em;
+    }
+}
+
+@media (min-width: 992px) {
+    .text-box {
+        height: 32em;
+    }
+}
+
+.text-box .download-file {
+    margin: 12px 0 0;
+}
+
+.text-box .link {
+    color: #00A651;
+}
+
+/* Penjelasan Seminar & Lomba */
+.penjelasan-seminar {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 25% 25% 40% 10%;
+    grid-gap: 24px;
+    margin: 72px 0 144px;
+}
+
+@media (max-width: 768px) {
+    .penjelasan-seminar {
+        display: block;
+    }
+}
+
+.penjelasan-title {
+    font-size: calc(8px + 2em);
+    color: #F6D4EC;
+}
+
+.penjelasan-header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.penjelasan-header-content {
+    font-size: calc(16px + 0.7em);
+}
+
+@media (max-width: 992px) {
+    .penjelasan-header-content {
+        font-size: calc(8px + 1em);
+    }
+}
+
+.penjelasan-photo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.penjelasan-countdown {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.penjelasan-specification {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.penjelasan-benefit {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.penjelasan-regist {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .penjelasan-regist {
+        margin-top: 36px;
+    }
+}
+
+.penjelasan-text {
+    font-size: 1.5em;
+}
+
+.penjelasan-text-lomba {
+    font-size: 1.5em;
+}
+
+@media (min-width: 992px) {
+    .penjelasan-text-lomba {
+        text-align: right;
+    }
+}
+
+.countdown-timer {
+    font-size: calc(10px + 2em);
+}
+
+.countdown-content {
+    padding-top: 24px;
+    text-align: center;
+}
+
+.lomba-info {
+    font-size: 20px;
+}
+
+.lomba-hadiah {
+    font-size: 16px;
+    width: fit-content;
+    margin: 24px auto;
+}
+
+.lomba-timeline {
+    margin-top: 72px;
+}
+
+.lomba-timeline-header {
+    position: relative;
+    z-index: 2;
+}
+
+.lomba-timeline-image {
+    margin-top: -15%;
+    z-index: 1;
+}
+
+.lomba-galeri {
+    padding-bottom: 72px;
+}
+
+.lomba-galeri-image {
+    margin-top: 12px;
+}
+
+.lomba-bg-1 {
+    background-image: url("../storage/assets/images/lomba-atas.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+}
+
+.lomba-bg-2 {
+    background-image: url("../storage/assets/images/lomba-bawah.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    margin-bottom: -36px;
+}
+
+/* About */
+.about-description {
+    font-size: 1.3em;
+}
+
+@media (max-width: 992px) {
+    .about-description {
+        margin-top: 24px;
+    }
+}
+
+.about-tujuan {
+    padding-bottom: 64px;
+}
+
+@media (max-width: 992px) {
+    .about-tujuan {
+        padding-bottom: 256px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-tujuan ol {
+        max-width: 80%;
+    }
+}
+
+.about-tujuan ol li {
+    font-size: 1.3em;
+}
+
+.about-bg {
+    background-image: url("../storage/assets/images/Copy of hiasan_globe.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+.play-btn {
+    width: auto;
+    height: auto;
+    margin: 12.5% auto;
+    cursor: pointer;
+}
+
+/* Login */
+.login-bg {
+    background-image: url("../storage/assets/images/login-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #003c60;
+}
+
+.login-form {
+    padding-top: 72px;
+    padding-bottom: 100px;
+    z-index: 2;
+}
+
+.login-logo {
+    position: relative;
+    z-index: 1;
+}
+
+/* Register */
+.register-bg {
+    background-image: url("../storage/assets/images/login-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #003c60;
+}
+
+.register-form {
+    padding-top: 72px;
+    padding-bottom: 100px;
+    z-index: 2;
+}
