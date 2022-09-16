@@ -609,14 +609,6 @@ footer {
     font-size: 1.3em;
 }
 
-.about-bg {
-    background-image: url("../storage/assets/images/Copy of hiasan_globe.png");
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
-}
-
 .play-btn {
     width: auto;
     height: auto;
