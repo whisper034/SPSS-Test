@@ -103,9 +103,9 @@ class DashboardController extends Controller
     {
         return $this->statusTahap->map(function ($item, $key)
         {
-            $stateColor = 'orange';
+            $stateColor = 'yellow';
             if ($item == StatusTahap::PROSES)
-                $stateColor = 'yellow';
+                $stateColor = 'orange';
             else if ($item == StatusTahap::SUKSES)
                 $stateColor = 'green';
             else if ($item == StatusTahap::GAGAL)
