@@ -26,6 +26,45 @@
                 display:none;
             }
 
+            .statistika-text {
+                margin-left: -30px;
+            }
+
+            .essay-text {
+                margin-right: -30px;
+            }
+
+            .infografis-text {
+                margin-left: -20px;
+            }
+
+            .spss-text {
+                margin-left: -30px;
+            }
+
+            .spss-info {
+                text-align: justify;
+                display: block;
+            }
+
+            .lomba-statistika-img {
+                height: 100%;
+                max-height: 100px;
+                width: auto;
+            }
+
+            .lomba-essay-img {
+                height: 100%;
+                max-height: 100px;
+                width: auto;
+            }
+
+            .lomba-infografis-img {
+                height: 100%;
+                max-height: 100px;
+                width: auto;
+            }
+
             @media (max-width: 768px) {
                 .bluebox{
                     padding:24px 14px;
@@ -62,6 +101,35 @@
                 .img-tl3{
                     display:none;
                 }
+
+                .statistika-text {
+                    text-align: center;
+                    height: 55px;
+                }
+
+                .essay-text {
+                    text-align: center;
+                    height: 80px;
+                }
+
+                .infografis-text {
+                    text-align: center;
+                    height: 65px;
+                }
+
+                .spss-text {
+                    text-align: center;
+                }
+
+                .spss-text-2 {
+                    text-align: center;
+                }
+
+                .spss-info-center {
+                    text-align: center;
+                    margin-left: calc(25px + 1rem);
+                    margin-right: calc(25px + 1rem);
+                }
             }
 
             @media (max-width: 480px) {
@@ -81,21 +149,27 @@
     <div class="container-fluid">
         <div class="summary bluebox">
             <div class="summary-text" style="margin-top: 0px;">
-                <div style="text-align: left; margin-left: -30px;">
+                <div class="spss-text">
                     <img src="{{ asset('storage/assets/images/title home spss.png') }}" alt="title-home-spss" height="100px">
                 </div>
                 <br>
-                <span class="sub-heading text-white" style="">Statistical Project for Smart Students</span>
-                <p class="spss-info text-white">
-                    SPSS atau Statistical Project for Smart Students adalah
-                    acara berskala nasional yang diadakan oleh Himpunan
-                    Mahasiswa Statistika (HIMSTAT) Binus University. SPSS
-                    tahun ini bertemakan "Be the Foundation of Our Future
-                    with Data Analytics". Tema tersebut dipilih mengingat
-                    <i>data analyst</i> di Indonesia yang masih tergolong sedikit
-                    dan kebutuhan <i>data analyst</i> yang semakin meningkat
-                    kedepannya.
-                </p>
+                <div class="spss-text-2">
+                    <span class="sub-heading text-white" style="">Statistical Project for Smart Students</span>
+                </div>
+                <br>
+                <div class="spss-info-center">
+                    <span class="spss-info text-white">
+                        SPSS atau Statistical Project for Smart Students adalah
+                        acara berskala nasional yang diadakan oleh Himpunan
+                        Mahasiswa Statistika (HIMSTAT) Binus University. SPSS
+                        tahun ini bertemakan "Be the Foundation of Our Future
+                        with Data Analytics". Tema tersebut dipilih mengingat
+                        <i>data analyst</i> di Indonesia yang masih tergolong sedikit
+                        dan kebutuhan <i>data analyst</i> yang semakin meningkat
+                        kedepannya.
+                    </span>
+                </div>
+
             </div>
             <div class="summary-logo" style="text-align: center; margin-left: 60px;">
                 <img src="{{ asset('storage/assets/logos/spss-logo-polos.png') }}">
@@ -154,8 +228,8 @@
         <div class="timeline text-center bluebox">
             <div style="text-align: left;">
                 <div>
-                    <div style="margin-left: -30px;">
-                        <img src="{{ asset('storage/assets/images/Lomba Statistika text bersinar.png') }}" alt="title-statistika-spss" height="100px">
+                    <div class="statistika-text">
+                        <img src="{{ asset('storage/assets/images/Lomba Statistika text bersinar.png') }}" alt="title-statistika-spss" class="lomba-statistika-img">
                     </div>
                     <br>
                     <span class="sub-heading text-white" style="font-weight: bold;">Data 5.0 Mission: Probability Over Reality</span>
@@ -237,8 +311,8 @@
         <div class="timeline text-center bluebox">
             <div style="text-align: right;">
                 <div>
-                    <div style="margin-right: -30px;">
-                        <img src="{{ asset('storage/assets/images/Lomba essay text bersinar.png') }}" alt="title-essay-spss" height="100px">
+                    <div class="essay-text">
+                        <img src="{{ asset('storage/assets/images/Lomba essay text bersinar.png') }}" alt="title-essay-spss" class="lomba-essay-img">
                     </div>
                     <br>
                     <span class="sub-heading text-white" style="font-weight: bold;">Penggunaan Sains Data dalam Pengambilan Keputusan pada Industri di indonesia</span>
@@ -280,8 +354,8 @@
         <div class="timeline text-center bluebox">
             <div style="text-align: left;">
                 <div>
-                    <div style="margin-left: -20px;">
-                        <img src="{{ asset('storage/assets/images/Lomba infografis.png') }}" alt="title-infografis-spss" height="100px">
+                    <div class="infografis-text">
+                        <img src="{{ asset('storage/assets/images/Lomba infografis.png') }}" alt="title-infografis-spss" class="lomba-infografis-img">
                     </div>
                     <br>
                     <span class="sub-heading text-white" style="font-weight: bold;">Pentingnya Ilmu Statistika untuk Mempersiapkan Mahasiswa Mengahadapi Tantangan Revolusi Industri 5.0</span>
