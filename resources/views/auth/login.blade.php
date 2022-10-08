@@ -2,15 +2,45 @@
 
 @section('style')
     <style>
+        .text-masuk {
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
         .btn-masuk{
             margin: 0 10px 0 0;
             width: 120px;
         }
+
+        @media (max-width: 768px) {
+            .login-form {
+            }
+
+            .form-style {
+                margin: 0;
+            }
+
+            .split-img {
+                transform: rotate(90deg);
+                margin-top: -100px;
+                margin-bottom: -100px;
+            }
+        }
+
         @media (max-width: 500px) {
+            .text-masuk {
+                font-size: 40px;
+                color: white;
+                font-weight: bold;
+            }
+
             .btn-masuk{
                 width:80px;
             }
         }
+
         @media (max-width: 440px) {
             .btn-masuk{
                 width:100%;
@@ -26,7 +56,7 @@
     <div class="" style="">
         <div class="container">
             <div class="form-style login-form">
-                <div style="font-size: 40px; color: white; font-weight: bold; margin-top: 20px;">
+                <div class="text-masuk">
                     <span>Masuk</span>
                 </div>
 
@@ -60,7 +90,7 @@
                         </div>
 
                         <div class="form-style-content col-md-2" style="text-align: center; margin-top: auto; margin-bottom: auto;">
-                            <img src="{{ asset('storage/assets/images/login-split.png') }}" alt="login-split" style="">
+                            <img src="{{ asset('storage/assets/images/login-split.png') }}" alt="login-split" class="split-img">
                         </div>
 
                         <div class=" form-style-content col-md-3" style="text-align: center; margin-top: auto; margin-bottom: auto;">

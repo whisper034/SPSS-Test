@@ -77,6 +77,24 @@
             background-color: #d83098;
         }
 
+        .timeline-statistika-img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+        }
+
+        .timeline-essay-img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+        }
+
+        .timeline-infografis-img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+        }
+
         @media (max-width: 768px) {
             .prev {
                 left: 0;
@@ -190,7 +208,7 @@
             </div>
 
             <div style="margin-top: 30px;">
-                <img src="{{ asset('storage/assets/images/timeline statistika.png') }}" alt="timeline statistika" width="700px">
+                <img src="{{ asset('storage/assets/images/timeline statistika.png') }}" alt="timeline statistika" width="700px" class="timeline-statistika-img">
             </div>
 
             <div style="margin-top: 30px; margin-left: 20px; margin-right: 20px; font-size: 22px;">
@@ -218,7 +236,7 @@
             </div>
 
             <div style="margin-top: 30px;">
-                <img src="{{ asset('storage/assets/images/timeline essay.png') }}" alt="timeline essay" width="700px">
+                <img src="{{ asset('storage/assets/images/timeline essay.png') }}" alt="timeline essay" class="timeline-essay-img">
             </div>
 
             <div style="margin-top: 30px; margin-left: 20px; margin-right: 20px; font-size: 22px;">
@@ -246,7 +264,7 @@
             </div>
 
             <div style="margin-top: 30px;">
-                <img src="{{ asset('storage/assets/images/timeline infografis.png') }}" alt="timeline infografis" width="700px">
+                <img src="{{ asset('storage/assets/images/timeline infografis.png') }}" alt="timeline infografis" class="timeline-infografis-img">
             </div>
 
             <div style="margin-top: 30px; margin-left: 20px; margin-right: 20px; font-size: 22px;">
