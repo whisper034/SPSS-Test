@@ -5,6 +5,19 @@
         .form-style-heading{
             font-size: 48px;
         }
+
+        @media (max-width: 768px) {
+            .form-style {
+                margin: 0;
+            }
+
+            .split-img {
+                transform: rotate(90deg);
+                margin-top: -100px;
+                margin-bottom: -100px;
+            }
+        }
+
         @media (max-width: 700px) {
             .form-style-heading{
                 font-size: 28px;
@@ -88,7 +101,7 @@
                         </div>
 
                         <div class="form-style-content col-md-2" style="text-align: center; margin-top: auto; margin-bottom: auto;">
-                            <img src="{{ asset('storage/assets/images/login-split.png') }}" alt="login-split" style="">
+                            <img src="{{ asset('storage/assets/images/login-split.png') }}" alt="login-split" class="split-img">
                         </div>
 
                         <div class="col-md-3" style="text-align: center; margin-top: auto; margin-bottom: auto;">
